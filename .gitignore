@@ -1,7 +1,12 @@
-/
-# object files
-*.o
+# 基本すべて無視
+*
 
-# compiled binaries
-client
-server
+# ソースコード
+!*.c
+!*.h
+
+# Makefile
+!Makefile*
+
+# gitignore自身
+!.gitignore
