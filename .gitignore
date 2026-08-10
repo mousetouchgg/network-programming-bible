@@ -1,12 +1,8 @@
-# 基本すべて無視
-*
+# object files
+*.o
 
-# ソースコード
-!*.c
-!*.h
-
-# Makefile
-!Makefile*
-
-# gitignore自身
-!.gitignore
+# executables without extension
+ch1/client
+ch1/server
+ch3/server1
+ch3/daemon
