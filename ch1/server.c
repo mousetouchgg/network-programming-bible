@@ -158,6 +158,11 @@ void send_recv_loop(int acc)
 			break;
 		}
 
+		/* 大文字へ変換 */
+		for (int i = 0; i < len; i++) {
+			buf[i] =  toupper(buf[i]);
+		}
+		
 		/* 文字列化・表示 */
 		buf[len] = '\0';
 		if ((ptr = strpbrk(buf, "\r\n")) != NULL) {
